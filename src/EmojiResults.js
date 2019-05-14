@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Clipboard from "clipboard";
 
 import EmojiResultRow from "./EmojiResultRow";
-import "./EmojiResults.css";
 
 class EmojiResults extends PureComponent {
   componentDidMount() {
@@ -17,6 +16,16 @@ class EmojiResults extends PureComponent {
   render() {
     return (
       <div className="component-emoji-results">
+        <EmojiResultRow data={this.props.data}/>
+      </div>
+    );
+  }
+}
+EmojiResults.propTypes = {
+  data: PropTypes.array
+};
+export default EmojiResults;
+/*
         {this.props.emojiData.map(emojiData => (
           <EmojiResultRow
             key={emojiData.title}
@@ -24,11 +33,4 @@ class EmojiResults extends PureComponent {
             title={emojiData.title}
           />
         ))}
-      </div>
-    );
-  }
-}
-EmojiResults.propTypes = {
-  emojiData: PropTypes.array
-};
-export default EmojiResults;
+*/

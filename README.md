@@ -1,18 +1,12 @@
-Emoji Search
----
+# Emoji Search
+Modified version of the original which was made using [*create-react-app*](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-Created with *create-react-app*. See the [full create-react-app guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+This version features a grid system and some little visual improvements.
 
+![](resources/screenshot.png)
 
-
-Install
----
-
+## Install
 `npm install`
 
-
-
-Usage
----
-
+## Usage
 `npm start`
